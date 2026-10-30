@@ -2,6 +2,50 @@ $(document).ready(function() {
 
     console.log("jQuery is ready!");
 
+    $("#change-greeting-btn").click(function() {
+        $(".headline").text("Welcome to my jQuery Portfolio!");
+    });
+        
+    $("#theme-dark-btn").click(function() {
+        $("body").css({
+            "background-color": "#1e1e1e",
+            "color": "#ffffff"
+        });
+        $("section, header, #live-preview").css({
+            "background-color": "#2d2d2d",
+            "color": "#ffffff"
+        });
+    });
+
+    $("#theme-light-btn").click(function() {
+        $("body").css({
+            "background-color": "#f4f7f6",
+            "color": "#333333"
+        });
+        $("section, header").css({
+            "background-color": "#ffffff",
+            "color": "#333333"
+        });
+        $("#live-preview").css({
+            "background-color": "#e9ecef",
+            "color": "#333333"
+        });
+    });
+
+
+    $("#hide-btn").click(function() {
+        $("#status-and-facts").hide();
+    });
+    
+    $("#show-btn").click(function() {
+        $("#status-and-facts").show();
+    });
+    
+    $("#toggle-btn").click(function() {
+        $("#status-and-facts").toggle();
+    });
+
+
     $("#fade-in-btn").click(function() {
         $(".gallery-img").fadeIn(1000);
     });
@@ -60,10 +104,10 @@ $(document).ready(function() {
     });
 
 
-    
-    $("#change-link-btn").click(function() {
-        $("#social-link").attr("href", "https://www.instagram.com/ikm_ls/");
 
+    $("#change-link-btn").click(function() {
+
+        $("#social-link").attr("href", "https://www.instagram.com/ikm_ls/");
         $("#social-link").text("My Instagram Profile");
     });
 
@@ -77,50 +121,31 @@ $(document).ready(function() {
         $("#preview-email").text(emailValue);
     });
 
-});
-
-$(document).ready(function() {
-    console.log("jQuery is ready!");
-
-    $("#change-greeting-btn").click(function() {
-        $(".headline").text("Welcome to my jQuery Portfolio!");
+    $("#my-form").submit(function(event) {
+        event.preventDefault(); 
+        alert("Form submitted successfully! (This is just a demo)");
     });
 
-    
+
+    let skillsAnimated = false; 
+
+    $("#animate-skills-btn").click(function() {
         
-    $("#theme-dark-btn").click(function() {
-        $("body").css({
-            "background-color": "#1e1e1e",
-            "color": "#ffffff"
-        });
-        $("section, header").css({
-            "background-color": "#2d2d2d",
-            "color": "#ffffff"
-        });
+        if (!skillsAnimated) {
+            $(".bar").each(function() {
+                const targetWidth = $(this).data("width");
+                
+                $(this).animate({ width: targetWidth }, 1500);
+            });
+            
+            $(this).text("Reset My Skills");
+            skillsAnimated = true;
+            
+        } else {
+            $(".bar").animate({ width: "0" }, 1000);
+            
+            $(this).text("Animate My Skills");
+            skillsAnimated = false;
+        }
     });
-
-
-    $("#theme-light-btn").click(function() {
-        $("body").css({
-            "background-color": "#f4f7f6",
-            "color": "#333333"
-        });
-        $("section, header").css({
-            "background-color": "#ffffff",
-            "color": "#333333"
-        });
-    });
-});
-
-
-$("#hide-btn").click(function() {
-    $("#status-and-facts").hide();
-});
-
-$("#show-btn").click(function() {
-    $("#status-and-facts").show();
-});
-
-$("#toggle-btn").click(function() {
-    $("#status-and-facts").toggle();
 });

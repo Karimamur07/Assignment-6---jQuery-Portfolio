@@ -15,7 +15,7 @@ section {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
 
-/* Стили для шапки профиля */
+
 header {
     background-color: #ffffff;
     padding: 20px;
@@ -50,4 +50,37 @@ button:hover {
 .gallery-img {
     border-radius: 8px;
     object-fit: cover;
+}
+
+#live-preview {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e9ecef; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #e0e0e0; 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar {
+    width: 0; 
+    height: 20px;
+    background-color: #007bff; 
+    border-radius: 5px;
 }
