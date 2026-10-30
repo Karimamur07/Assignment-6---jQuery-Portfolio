@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 - jQuery Portfolio</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <section id="welcome">
+        <h1>Welcome to My Portfolio</h1>
+    </section>
+
+    <header id="profile-header">
+        <h2 class="headline">Hello, I'm Karima Mursalimova</h2>
+        <p id="intro">I am a student learning Web Technologies.</p>
+        
+        <div class="controls">
+            <button id="change-greeting-btn">Change Greeting</button>
+            <button id="theme-light-btn">Light Theme</button>
+            <button id="theme-dark-btn">Dark Theme</button>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a student passionate about front-end development and web technologies.</p>
+        
+        <div id="status-and-facts">
+            <p><strong>Status:</strong> Currently learning jQuery!</p>
+            <ul>
+                <li>Fun fact 1: I love playing volleyball.</li>
+                <li>Fun fact 2: I am a big fan of sci-fi movies.</li>
+                <li>Goal: To become a professional web developer.</li>
+            </ul>
+        </div>
+
+        <button id="hide-btn">Hide</button>
+        <button id="show-btn">Show</button>
+        <button id="toggle-btn">Toggle</button>
+    </section>
+
+    
+    <section id="gallery">
+        <h2>My Gallery</h2>
+        
+        <div id="gallery-images">
+            <img class="gallery-img" src="images/myphoto.jpg" alt="My Photo" width="200">
+            <img class="gallery-img" src="images/volleyball.jpg" alt="My Hobby" width="200">
+        </div>
+
+        <div class="controls">
+            <button id="fade-in-btn">Fade In</button>
+            <button id="fade-out-btn">Fade Out</button>
+            <button id="fade-toggle-btn">Fade Toggle</button>
+        </div>
+    </section>
+
+
+    <section id="favorites">
+        <h2>My Favorites</h2>
+
+        <button id="toggle-all-btn">Toggle All Panels</button>
+
+        <div class="accordion-item">
+            <h3 class="slide-heading">My Favorite Music</h3>
+            <div class="slide-panel">
+                <p>I love listening to rock, lo-fi, and classical music.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h3 class="slide-heading">My Favorite Movie</h3>
+            <div class="slide-panel">
+                <p>My favorite movie is "Inception" because of its complex plot.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h3 class="slide-heading">My Favorite Subject</h3>
+            <div class="slide-panel">
+                <p>Web Technologies, of course! I enjoy writing code and seeing the result.</p>
+            </div>
+        </div>
+    </section>
+
+     <section id="skills">
+        <h2>Technical Skills</h2>
+        
+        <ul id="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+        </ul>
+
+        <input type="text" id="skill-input" placeholder="Enter a new skill">
+        <div class="controls">
+            <button id="add-skill-btn">Add Skill</button>
+            <button id="prepend-skill-btn">Prepend Skill</button>
+            <button id="remove-skill-btn">Remove Skill</button>
+        </div>
+    </section>
+
+    <section id="social-links">
+        <h2>Connect with Me</h2>
+        <p>
+            Check out my profile: 
+            <a id="social-link" href="https://github.com/Karimamur07" target="_blank">My GitHub Profile</a>
+        </p>
+        
+        <button id="change-link-btn">Change to Instagram</button>
+    </section>
+
+
+    
+    <section id="contact">
+        <h2>Contact Form</h2>
+        
+        <form id="my-form">
+            <div>
+                <label for="name-input">Name:</label><br>
+                <input type="text" id="name-input" placeholder="Enter your name">
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="email-input">Email:</label><br>
+                <input type="text" id="email-input" placeholder="Enter your email">
+            </div>
+        </form>
+
+        <div id="live-preview" style="margin-top: 15px; padding: 10px; background-color: #e9ecef; border-radius: 5px;">
+            <p>Live Preview:</p>
+            <p><strong>Name:</strong> <span id="preview-name"></span></p>
+            <p><strong>Email:</strong> <span id="preview-email"></span></p>
+        </div>
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
