@@ -124,3 +124,26 @@ I created a contact form with inputs for Name and Email. I used the `.on("input"
 <img width="280" height="351" alt="image" src="https://github.com/user-attachments/assets/2aebc25b-e2d3-4830-910e-7e0a786d25dc" />
 
 <img width="439" height="127" alt="image" src="https://github.com/user-attachments/assets/089ab033-e19d-42d4-b86c-d822151049c1" />
+
+
+
+Part 4. Animations
+
+Task 8. Basic Animation
+
+I extended the skills section by creating a visual representation of technical skills using skill bars. Initially, the bars have a width of 0 (defined in CSS). I added an "Animate My Skills" button. When clicked, the `.animate()` method is used inside an `.each()` loop to increase the width of each bar to its target level (stored in a `data-width` attribute) over 1.5 seconds. When clicked again, the bars smoothly animate back to zero width.
+
+<img width="428" height="429" alt="image" src="https://github.com/user-attachments/assets/08824977-4493-49d3-90b5-b322e5480198" />
+
+<img width="498" height="218" alt="image" src="https://github.com/user-attachments/assets/4b0695fb-3f11-400e-98fe-d84f07db9aa5" />
+
+<img width="463" height="414" alt="image" src="https://github.com/user-attachments/assets/47abd22b-a00f-48fb-8892-616354a0bdb0" />
+
+<img width="365" height="567" alt="image" src="https://github.com/user-attachments/assets/c32a3f0c-d856-4a5e-8d2d-4d7a89f52b02" />
+
+<img width="787" height="340" alt="image" src="https://github.com/user-attachments/assets/0c03cebc-90f3-40eb-9740-fb256943e483" />
+
+
+Summary
+
+During this assignment, I learned how to integrate jQuery into a web project and use it to manipulate the DOM. I practiced working with selectors, effects (fade, slide, hide/show), and DOM manipulation (append, prepend, remove, attr). The most challenging part was creating the skill bar animations and managing the dark/light theme states properly. Overall, it was a great experience that helped me understand how to make web pages interactive.
