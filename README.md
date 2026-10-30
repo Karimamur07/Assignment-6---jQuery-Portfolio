@@ -2,6 +2,8 @@ Karima Mursalimova
 
 IT-2502
 
+This is my website: https://karimamur07.github.io/Assignment-6---jQuery-Portfolio/
+
 Part 1. Getting Started with jQuery
 
 Task 0. Setup
